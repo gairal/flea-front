@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App matches snapshot 1`] = `
+<DocumentFragment>
+  <header>
+    <h1
+      class="text-3xl p-2"
+    >
+      React Seed
+    </h1>
+    <hr
+      class="border mb-4"
+    />
+  </header>
+  <main
+    class="main"
+  >
+    <p>
+      context test
+    </p>
+  </main>
+</DocumentFragment>
+`;
