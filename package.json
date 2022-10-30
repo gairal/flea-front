@@ -1,7 +1,7 @@
 {
-  "name": "react-seed",
+  "name": "flea-front",
   "version": "0.0.1",
-  "description": "React Seed",
+  "description": "Front-end for flea app",
   "main": "dist/index.html",
   "scripts": {
     "build": "tsc && vite build",
@@ -15,19 +15,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gairal/react-seed.git"
+    "url": "git+https://github.com/gairal/flea-front.git"
   },
   "keywords": [
-    "react",
-    "tailwind",
-    "jest"
+    "feal",
+    "market",
+    "broquante",
+    "antique"
   ],
   "author": "@gairal",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gairal/react-seed/issues"
+    "url": "https://github.com/gairal/flea-front/issues"
   },
-  "homepage": "https://github.com/gairal/react-seed#readme",
+  "homepage": "https://github.com/gairal/flea-front#readme",
   "devDependencies": {
     "@commitlint/cli": "^17.0.0",
     "@commitlint/config-conventional": "^17.0.0",
@@ -67,6 +68,7 @@
     "vite": "^3.0.0"
   },
   "dependencies": {
+    "@directus/sdk": "^10.1.4",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
