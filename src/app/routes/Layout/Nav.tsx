@@ -1,31 +1,29 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 
 const navItems = [
   {
-    tag: 'meubles',
+    tag: "meubles",
   },
   {
-    tag: 'tables',
+    tag: "tables",
   },
 ];
 
-export const Nav = () => {
-  return (
-    <nav>
-      <ul className="flex">
-        {navItems.map(({ tag }) => (
-          <li key={tag}>
-            <NavLink
-              className={({ isActive }) =>
-                `block p-2 ${isActive ? 'bg-amber-800' : ''}`
-              }
-              to={`objects/?tags=${tag}`}
-            >
-              {tag}
-            </NavLink>
-          </li>
-        ))}
-      </ul>
-    </nav>
-  );
-};
+export const Nav = () => (
+  <nav>
+    <ul className="flex">
+      {navItems.map(({ tag }) => (
+        <li key={tag}>
+          <NavLink
+            className={({ isActive }) =>
+              `block p-2 ${isActive ? "bg-amber-800" : ""}`
+            }
+            to={`objects/?tags=${tag}`}
+          >
+            {tag}
+          </NavLink>
+        </li>
+      ))}
+    </ul>
+  </nav>
+);
