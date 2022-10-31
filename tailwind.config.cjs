@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./index.html", "./src/**/*.{ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'serif': ['"Roboto Slab"', 'ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
+      },
+    },
   },
   plugins: [],
 };

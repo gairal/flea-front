@@ -6,9 +6,12 @@ import { SearchBox } from "~/src/app/routes/Layout/SearchBox";
 
 export const Header: FC = () => (
   <header>
-    <div className="flex border-b">
-      <h1 className="p-2 text-xl">
-        <NavLink to="/">Les Puces A Boussuge</NavLink>
+    <div className="flex items-center border-b px-4 py-2">
+      <h1 className="mr-4 text-lg">
+        <NavLink className="flex flex-col items-center" to="/">
+          <span>Les Puces</span>
+          <span>à Boussuge</span>
+        </NavLink>
       </h1>
       <SearchBox />
     </div>

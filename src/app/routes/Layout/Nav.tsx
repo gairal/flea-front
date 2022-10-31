@@ -11,12 +11,12 @@ const navItems = [
 
 export const Nav = () => (
   <nav>
-    <ul className="flex">
+    <ul className="flex justify-around bg-teal-200">
       {navItems.map(({ tag }) => (
-        <li key={tag}>
+        <li key={tag} className="transition-colors hover:bg-teal-300">
           <NavLink
             className={({ isActive }) =>
-              `block p-2 ${isActive ? "bg-amber-800" : ""}`
+              `block px-4 py-3 ${isActive ? "bg-amber-800" : ""}`
             }
             to={`objects/?tags=${tag}`}
           >
