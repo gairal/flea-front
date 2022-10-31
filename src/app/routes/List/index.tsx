@@ -1,20 +1,18 @@
-import { FC, useEffect, useState } from "react";
+import { FC } from "react";
+import { useLoaderData } from "react-router-dom";
 import { OneItem } from "@directus/sdk";
 
-import { useDirectusContext } from "~/src/app/contexts";
+import { directus } from "~/src/services";
 import { FleaObject } from "~/src/app/types";
 
-export const ObjectList: FC = () => {
-  const { client } = useDirectusContext();
-  const [objects, setObjects] = useState<OneItem<FleaObject>[]>();
+export const loader = () =>
+  directus
+    .items("objects")
+    .readByQuery()
+    .then(({ data }) => data);
 
-  useEffect(() => {
-    client
-      .items("objects")
-      .readByQuery()
-      .then(({ data }) => data && setObjects(data));
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+export const ObjectList: FC = () => {
+  const objects = useLoaderData() as OneItem<FleaObject>[];
 
   return (
     <div>
