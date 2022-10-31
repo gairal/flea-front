@@ -20,6 +20,7 @@ export const useSearchBox = () => {
 
   const handleReset = () => {
     setSearch("");
+    setResults([]);
   };
 
   return { handleChange, handleReset, results, search };
