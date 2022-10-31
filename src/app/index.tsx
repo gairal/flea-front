@@ -1,9 +1,13 @@
-import { Header } from './layout/Header';
-import { Main } from './layout/Main';
+import { RouterProvider } from 'react-router-dom';
+
+import {
+  DirectusContextProvider,
+  useInitDirectusContext,
+} from '~/src/app/contexts';
+import { router } from '~/src/app/routes';
 
 export const App = () => (
-  <>
-    <Header>React Seed</Header>
-    <Main />
-  </>
+  <DirectusContextProvider value={useInitDirectusContext()}>
+    <RouterProvider router={router} />
+  </DirectusContextProvider>
 );
