@@ -1,8 +1,8 @@
-import { FC, useEffect, useState } from 'react';
-import { OneItem } from '@directus/sdk';
+import { FC, useEffect, useState } from "react";
+import { OneItem } from "@directus/sdk";
 
-import { useDirectusContext } from '~/src/app/contexts';
-import { FleaObject } from '~/src/app/types';
+import { useDirectusContext } from "~/src/app/contexts";
+import { FleaObject } from "~/src/app/types";
 
 export const ObjectList: FC = () => {
   const { client } = useDirectusContext();
@@ -10,7 +10,7 @@ export const ObjectList: FC = () => {
 
   useEffect(() => {
     client
-      .items('objects')
+      .items("objects")
       .readByQuery()
       .then(({ data }) => data && setObjects(data));
     // eslint-disable-next-line react-hooks/exhaustive-deps

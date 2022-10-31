@@ -1,8 +1,8 @@
-import { createContext, useContext } from 'react';
+import { createContext, useContext } from "react";
 
-import { DirectusContextState } from './types';
+import { DirectusContextState } from "./types";
 
-export * from './useInitDirectusContext';
+export * from "./useInitDirectusContext";
 
 const DirectusContext = createContext<DirectusContextState>(
   {} as DirectusContextState
