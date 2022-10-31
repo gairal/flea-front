@@ -11,7 +11,7 @@ export const ObjectList: FC = () => {
   useEffect(() => {
     client
       .items('objects')
-      .readByQuery({ meta: 'total_count' })
+      .readByQuery()
       .then(({ data }) => data && setObjects(data));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);

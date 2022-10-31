@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom';
 
 export const Main = () => (
-  <main className="main">
+  <main className="p-4">
     <Outlet />
   </main>
 );

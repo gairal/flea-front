@@ -1,8 +1,16 @@
 import { FC } from 'react';
+import { NavLink } from 'react-router-dom';
+
+import { Nav } from '~/src/app/routes/Layout/Nav';
 
 export const Header: FC = () => (
   <header>
-    <h1 className="text-xl p-2">Les Puces A Boussuge</h1>
-    <hr className="border mb-4" />
+    <div className="flex border-b">
+      <h1 className="text-xl p-2">
+        <NavLink to="/">Les Puces A Boussuge</NavLink>
+      </h1>
+      <input className="bg-blue-100" type="search" />
+    </div>
+    <Nav />
   </header>
 );
