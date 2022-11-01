@@ -1,23 +1,22 @@
 import { FC } from "react";
-import { useLoaderData } from "react-router-dom";
-import { OneItem } from "@directus/sdk";
 
 import { directus } from "~/src/services";
-import { FleaObject } from "~/src/app/types";
+import { useData } from "../../hooks";
 
 export const loader = () =>
   directus
     .items("objects")
     .readByQuery()
-    .then(({ data }) => data);
+    .then(({ data }) => data ?? []);
 
 export const ObjectList: FC = () => {
-  const objects = useLoaderData() as OneItem<FleaObject>[];
+  const objects = useData<Awaited<ReturnType<typeof loader>>>();
 
   return (
     <div>
-      {objects?.map(({ name }) => (
-        <h1 key={name}>{name}</h1>
+      OBJECT LIST
+      {objects?.map((item) => (
+        <h1 key={item?.id}>{item?.name}</h1>
       ))}
     </div>
   );

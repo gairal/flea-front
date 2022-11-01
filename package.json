@@ -51,6 +51,7 @@
     "eslint-plugin-no-only-tests": "^3.0.0",
     "eslint-plugin-react": "^7.0.0",
     "eslint-plugin-react-hooks": "^4.0.0",
+    "eslint-plugin-sort-keys-fix": "^1.1.2",
     "eslint-plugin-typescript-sort-keys": "^2.0.0",
     "eslint-plugin-unused-imports": "^2.0.0",
     "husky": "^8.0.0",

@@ -21,7 +21,7 @@ export const Nav = () => (
             className={({ isActive }) =>
               `block px-4 py-3 ${isActive ? "bg-amber-800" : ""}`
             }
-            to={`objects/?tags=${tag}`}
+            to={`objects/tags/${tag}`}
           >
             {tag}
           </NavLink>

@@ -7,13 +7,16 @@ import { Home } from "./Home";
 
 export const router = createBrowserRouter([
   {
-    path: "/",
-    element: <Layout />,
     // errorElement: <ErrorPage />,
     children: [
-      { path: "/", element: <Home /> },
-      { path: "objects/", element: <ObjectList />, loader: objectsLoader },
-      { path: "objects/:objectId", element: <ObjectItem /> },
+      { element: <Home />, path: "/" },
+      { element: <ObjectList />, loader: objectsLoader, path: "objects/" },
+      { element: <ObjectList />, path: "objects/tags/:tag" },
+      { element: <ObjectItem />, path: "objects/:objectId" },
     ],
+
+    element: <Layout />,
+
+    path: "/",
   },
 ]);

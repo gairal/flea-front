@@ -1,29 +1,17 @@
-import { useEffect, useMemo } from "react";
-
-const debounce = <F extends (...args: Parameters<F>) => ReturnType<F>>(
-  fn: F,
-  waitFor = 500
-) => {
-  let timeout: ReturnType<typeof setTimeout>;
-
-  const debounced = (...args: Parameters<F>) => {
-    clearTimeout(timeout);
-    timeout = setTimeout(() => fn(...args), waitFor);
-  };
-  debounced.cancel = () => clearTimeout(timeout);
-
-  return debounced;
-};
+import { useEffect, useRef } from "react";
 
 export const useDebounce = <
   F extends (...args: Parameters<F>) => ReturnType<F>
 >(
   callback: F,
-  waitFor?: number
+  waitFor = 500
 ) => {
-  const debounced = useMemo(() => debounce(callback, waitFor), []);
+  const timeout = useRef<ReturnType<typeof setTimeout>>();
 
-  useEffect(() => () => debounced.cancel(), [debounced]);
+  useEffect(() => () => clearTimeout(timeout.current), []);
 
-  return debounced;
+  return (...args: Parameters<F>) => {
+    clearTimeout(timeout.current);
+    timeout.current = setTimeout(() => callback(...args), waitFor);
+  };
 };

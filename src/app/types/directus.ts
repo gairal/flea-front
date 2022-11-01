@@ -1,4 +1,5 @@
 export interface FleaObject {
+  id: string;
   name: string;
 }
 
