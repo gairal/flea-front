@@ -1,4 +1,5 @@
-import { useSearchBox } from "~/src/app/routes/Layout/useSearchBox";
+import { SearchResults } from "./SearchResults";
+import { useSearchBox } from "./useSearchBox";
 
 export const SearchBox = () => {
   const { handleChange, handleReset, results, search } = useSearchBox();
@@ -28,9 +29,7 @@ export const SearchBox = () => {
           <i className="fa-solid fa-x" />
         </button>
       </div>
-      {results.map(({ name }) => (
-        <div key={name}>{name}</div>
-      ))}
+      {results.length > 0 && <SearchResults items={results} />}
     </>
   );
 };

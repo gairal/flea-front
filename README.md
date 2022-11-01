@@ -5,9 +5,14 @@
 
 ### Table of Contents
 
+- [Todo](#todo)
 - [File structure](#file-structure)
 - [Quick Start](#quick-start)
 - [Commands](#commands)
+
+### Todo
+
+- Google Analytics
 
 ### File structure
 

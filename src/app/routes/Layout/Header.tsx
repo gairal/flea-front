@@ -10,7 +10,7 @@ export const Header: FC = () => (
       <h1 className="mr-4 text-lg">
         <NavLink className="flex flex-col items-center" to="/">
           <span>Les Puces</span>
-          <span>à Boussuge</span>
+          <span>à José</span>
         </NavLink>
       </h1>
       <SearchBox />
