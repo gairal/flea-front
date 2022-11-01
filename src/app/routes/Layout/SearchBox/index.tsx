@@ -23,7 +23,7 @@ export const SearchBox = () => {
           <i className="fa-solid fa-magnifying-glass" />
         </button>
         <input
-          className="w-full rounded-sm border border-transparent bg-teal-100 py-3 px-12 text-gray-600 transition-shadow focus:border-amber-600 focus:outline-none focus:ring-1 focus:ring-amber-600"
+          className="w-full rounded-sm border border-transparent bg-sky-100 py-3 px-12 text-gray-600 transition-shadow focus:border-sky-600 focus:outline-none focus:ring-1 focus:ring-sky-600"
           onChange={handleChange}
           onFocus={handleFocus}
           placeholder="table, vase, ..."
