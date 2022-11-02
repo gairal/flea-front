@@ -18,10 +18,12 @@
 - client error catcher with Google analytics
 - SEO
 - use React.Lazy
-- design
-- https://www.valerie-objects.com/
-- https://artistoric.com/
-- https://www.catawiki.com/en/c/3
+- designs
+  - https://www.valerie-objects.com/
+  - https://artistoric.com/
+  - https://www.catawiki.com/en/c/3
+  - https://helenstoreyantiques.com/
+  - https://maisonfeteetcie.com/
 
 ### File structure
 
