@@ -16,7 +16,7 @@ export const SearchBox = () => {
     <div ref={ref} className="flex flex-1 flex-col">
       <div className="relative">
         <button
-          className="absolute inset-y-0 left-0 px-4 text-gray-600	"
+          className="absolute inset-y-0 left-0 px-4 text-sky-600 transition-colors hover:text-sky-700"
           onClick={() => undefined}
           type="button"
         >
@@ -30,17 +30,21 @@ export const SearchBox = () => {
           type="search"
           value={query}
         />
-        <button
-          className="absolute inset-y-0 right-0 px-4 text-gray-600"
-          onClick={handleReset}
-          type="button"
-        >
-          <i className="fa-solid fa-x" />
-        </button>
+        {query && (
+          <button
+            className="absolute inset-y-0 right-0 px-4 text-gray-600"
+            onClick={handleReset}
+            type="button"
+          >
+            <i className="fa-solid fa-x" />
+          </button>
+        )}
       </div>
-      <div className="relative">
-        {showResults && <SearchResults items={results} />}
-      </div>
+      {showResults && (
+        <div className="relative">
+          <SearchResults items={results} />
+        </div>
+      )}
     </div>
   );
 };

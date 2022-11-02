@@ -13,6 +13,9 @@
 ### Todo
 
 - Google Analytics
+- switch to Gatsby
+- client error catcher with Google analytics
+- SEO
 
 ### File structure
 
