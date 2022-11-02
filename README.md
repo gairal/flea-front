@@ -16,6 +16,7 @@
 - switch to Gatsby
 - client error catcher with Google analytics
 - SEO
+- use React.Lazy
 
 ### File structure
 

@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const tags = [
   {
@@ -21,16 +21,12 @@ export const Categories = () => (
           key={tag}
           className="mr-3 border capitalize transition-colors hover:bg-sky-100"
         >
-          <NavLink
-            className={({ isActive }) =>
-              `block h-full w-full px-4 py-3 ${
-                isActive ? "bg-sky-800 text-sky-50" : ""
-              }`
-            }
+          <Link
+            className="block h-full w-full px-4 py-3"
             to={`objects/tags/${tag}`}
           >
             {tag}
-          </NavLink>
+          </Link>
         </li>
       ))}
     </ul>
