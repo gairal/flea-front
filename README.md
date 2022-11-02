@@ -12,11 +12,16 @@
 
 ### Todo
 
+- cookie disclaimer
 - Google Analytics
 - switch to Gatsby
 - client error catcher with Google analytics
 - SEO
 - use React.Lazy
+- design
+- https://www.valerie-objects.com/
+- https://artistoric.com/
+- https://www.catawiki.com/en/c/3
 
 ### File structure
 
