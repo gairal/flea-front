@@ -9,7 +9,7 @@ export const Home = () => (
     />
     <div className={PAGE_CONTAINER_CLASSES}>
       <Categories />
-      {Array.from({ length: 10 }).map((whatever, i) => (
+      {Array.from({ length: 20 }).map((whatever, i) => (
         // eslint-disable-next-line react/no-array-index-key
         <p key={i}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

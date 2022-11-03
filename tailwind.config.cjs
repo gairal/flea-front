@@ -6,7 +6,7 @@ module.exports = {
     extend: {
       fontFamily: {
         serif: [
-          "Lobster",
+          "Lobster Two",
           "ui-serif",
           "Georgia",
           "Cambria",
