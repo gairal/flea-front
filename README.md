@@ -1,6 +1,6 @@
-# react-seed &middot; [![CI Status](https://github.com/gairal/react-seed/workflows/CI/badge.svg)](https://github.com/gairal/react-seed/actions)
+# flea-front &middot; [![CI Status](https://github.com/gairal/flea-front/workflows/CI/badge.svg)](https://github.com/gairal/flea-front/actions)
 
-> A React Seed [TypeScript](https://www.typescriptlang.org/),
+> A React App [TypeScript](https://www.typescriptlang.org/),
 > [Jest](https://jestjs.io/), [Prettier](https://prettier.io/), [eslint](https://eslint.org/) and ❤️
 
 ### Table of Contents
@@ -28,7 +28,7 @@
 ### File structure
 
 ```markup
-react-seed/
+flea-front/
  ├──dist/                            * generated library
  │
  ├──src/                             * source TypeScript Files
@@ -43,10 +43,10 @@ react-seed/
 
 ```bash
 # clone the repo
-git clone git@github.com:gairal/react-seed.git
+git clone git@github.com:gairal/flea-front.git
 
 # change directory to the repo
-cd react-seed
+cd flea-front
 
 # install the dependencies
 yarn
